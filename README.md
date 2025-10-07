@@ -107,7 +107,7 @@ Este software se distribuye bajo la [Licencia MIT](LICENSE).
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/yourusername/wifi-authack.git
+    git clone https://github.com/CristianT71/wifi-authack-suite.git
     cd wifi-authack
     ```
 2.  **Instalar dependencias:**
@@ -123,5 +123,5 @@ Este software se distribuye bajo la [Licencia MIT](LICENSE).
 
 ---
 
-**Autor:** Manus AI
+**Autor:** Cristian Trujillo
 

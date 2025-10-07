@@ -2,7 +2,9 @@
 
 # compatibility.sh - Módulo para diagnóstico de compatibilidad WiFi
 
-source ../assets/colors.sh
+# Resolver la ruta del script y cargar colors.sh relativo a este archivo
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/../assets/colors.sh"
 
 # Función para detectar chipset y drivers
 detect_hardware() {

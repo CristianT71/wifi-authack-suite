@@ -3,6 +3,12 @@
 # colors.sh - Funciones para la salida de color en la terminal
 
 # Colores estándar
+if [ -n "${WIFI_AUTHACK_COLORS_LOADED+x}" ]; then
+	# Si se ejecuta directamente en vez de source, salir silenciosamente
+	return 0 2>/dev/null || exit 0
+fi
+WIFI_AUTHACK_COLORS_LOADED=1
+
 export C_RED='\033[0;31m'
 export C_GREEN='\033[0;32m'
 export C_YELLOW='\033[0;33m'

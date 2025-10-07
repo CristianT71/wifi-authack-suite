@@ -2,7 +2,9 @@
 
 # deauth.sh - Módulo para pruebas de desautenticación
 
-source ../assets/colors.sh
+# Resolver la ruta del script y cargar colors.sh relativo a este archivo
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/../assets/colors.sh"
 
 # Función para verificar si una interfaz está en modo monitor
 is_monitor_mode() {

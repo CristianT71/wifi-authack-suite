@@ -2,7 +2,9 @@
 
 # report.sh - Módulo para la generación de reportes
 
-source ../assets/colors.sh
+# Resolver la ruta del script y cargar colors.sh relativo a este archivo
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/../assets/colors.sh"
 
 # Función para generar un reporte consolidado de todos los logs
 generate_consolidated_report() {

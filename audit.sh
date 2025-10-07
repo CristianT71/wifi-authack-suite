@@ -2,8 +2,9 @@
 
 # audit.sh - Script principal para wifi-authack
 
-# Cargar funciones de color
-source ./assets/colors.sh
+# Cargar funciones de color (resolviendo la ruta del script)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/assets/colors.sh"
 
 # Función para mostrar el banner
 show_banner() {
